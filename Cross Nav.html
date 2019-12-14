@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cross Nav</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <style>
+    body{
+        background-color: #111113;
+        font-family: 'Manjari', sans-serif;
+    }
+    #cross-menu ul li:first-child{
+        border-right: 1px solid #275684;
+        float: left;
+        width: 80px;
+        height: 489px; 
+    }
+    #cross-menu ul li h2{
+        color: #0F3959;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        line-height: 80px;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    #cross-menu ul li:not(:first-child){
+        margin-left: 81px;
+    }
+    #cross-menu ul li{
+        width: 305px;
+        height: 97px;
+        border-bottom: 1px solid #275684;  
+        background-color: #306BA7;
+    }
+   #cross-menu ul li a{
+       color:white;
+       text-decoration: none;
+       line-height: 97px;
+       padding-left: 55px;
+       width: 250px;
+       height: 97px;
+       display: block;
+   }
+   #cross-menu .fa-chevron-right{
+       margin-left:100px;
+   }
+   #cross-menu ul li a.active:active{
+       background-color: #275684;
+   }
+    </style>
+</head>
+<body>
+   
+    <nav id="cross-menu">
+        <ul>
+            <li><h2>Our Company</h2></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#" class="active">Products <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+   
+</body>
+</html>
